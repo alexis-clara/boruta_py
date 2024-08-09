@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='Boruta',
-      version='{{VERSION_PLACEHOLDER}}',
+      version='1.0.0',
       description='Python Implementation of Boruta Feature Selection',
       url='https://github.com/alexis-clara/boruta_py.git',
       download_url='https://github.com/alexis-clara/boruta_py.git',
