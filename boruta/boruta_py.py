@@ -605,7 +605,7 @@ class BorutaPy(BaseEstimator, TransformerMixin):
         Check hyperparameters as well as X and y before proceeding with fit.
         """
         # check X and y are consistent len, X is Array and y is column
-        X, y = check_X_y(X, y)
+        X, y = check_X_y(X, y, force_all_finite = 'allow-nan')
         if self.perc <= 0 or self.perc > 100:
             raise ValueError('The percentile should be between 0 and 100.')
 
